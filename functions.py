@@ -1,13 +1,18 @@
 import numpy as np
 
 def text_parser(filepath: str) -> list:
-    """_summary_
+    """Returns a list of strings corresponding to each line of the input file
 
     Args:
-        filepath (str): _description_
+        filepath (str): filepath to .txt file
 
     Returns:
-        list: _description_
+        list: list of strings corresponding to each line of the input file
+
+    Future functionality:
+        - Add casting to ints
+        - Add casting to numpy arrays
+        - Detect chunks separated by '' 
     """
 
     data = open(f'inputs/{filepath}', 'r').read().split('\n')
