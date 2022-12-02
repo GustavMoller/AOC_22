@@ -8,8 +8,7 @@ if __name__ == "__main__":
     for line in raw_data:
         if line == '':
             continue
-        a = line.split()[0]
-        b = line.split()[1]
+        a, b = line.split()
         if b == 'X':
             score += 1
             if a == 'A':
@@ -35,8 +34,7 @@ if __name__ == "__main__":
     for line in raw_data:
         if line == '':
             continue
-        a = line.split()[0]
-        b = line.split()[1]
+        a, b = line.split()
         if b == 'Z':
             score += 6
             if a == 'A':

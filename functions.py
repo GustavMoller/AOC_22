@@ -1,6 +1,6 @@
 import numpy as np
 
-def text_parser(filepath: str, return_chunks=True, detect_integers=True, return_array=False) -> list:
+def text_parser(filepath: str) -> list:
     """Returns a list of strings corresponding to each line of the input file
 
     Args:
@@ -16,6 +16,5 @@ def text_parser(filepath: str, return_chunks=True, detect_integers=True, return_
     """
 
     data = open(f'inputs/{filepath}', 'r').read().split('\n')
-    
-    
-    return data
+
+    return data[:-1]
