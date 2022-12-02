@@ -6,8 +6,6 @@ if __name__ == "__main__":
     # part 1
     score = 0
     for line in raw_data:
-        if line == '':
-            continue
         a, b = line.split()
         if b == 'X':
             score += 1
@@ -32,8 +30,6 @@ if __name__ == "__main__":
     # part 2
     score = 0
     for line in raw_data:
-        if line == '':
-            continue
         a, b = line.split()
         if b == 'Z':
             score += 6
