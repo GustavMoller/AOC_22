@@ -1,10 +1,4 @@
-from functions import text_parser
-
-def get_priority(char) -> int:
-    if char.islower():
-        return ord(char) - 96
-    elif char.isupper():
-        return ord(char) - 38
+from functions import text_parser, get_priority
 
 if __name__ == "__main__":
     raw_data = text_parser('day3.txt')

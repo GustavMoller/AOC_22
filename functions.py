@@ -18,3 +18,9 @@ def text_parser(filepath: str) -> list:
     data = open(f'inputs/{filepath}', 'r').read().split('\n')
 
     return data[:-1]
+
+def get_priority(char: str) -> int:
+    if char.islower():
+        return ord(char) - 96
+    elif char.isupper():
+        return ord(char) - 38
